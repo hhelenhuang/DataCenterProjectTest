@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title 資料申請</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- font awsome css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <link rel="stylesheet" href="~/Content/maicons.css">
+
+    <link rel="stylesheet" href="~/Scripts/vendor/animate/animate.css">
+
+    <link rel="stylesheet" href="~/Scripts/vendor/owl-carousel/css/owl.carousel.css">
+
+    <link rel="stylesheet" href="~/Scripts/vendor/fancybox/css/jquery.fancybox.css">
+
+    <link rel="stylesheet" href="~/Content/theme.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+</head>
+<body>
+
+    <div class="back-to-top"></div>
+
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark border-bottom box-shadow mb-3 fixed-top" style="background-color: #1b6ec2;">
+        <div class="container">
+            @Html.ActionLink("資料申請", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto pt-3 pt-lg-0">
+                    <li>@Html.ActionLink(" 首頁", "Index", "Home", new { area = "" }, new { @class = "nav-link text-light fa-solid fa-house" }) </li>
+                    <li>@Html.ActionLink(" 申請/下載表單", "Form", "Form", new { area = "" }, new { @class = "nav-link text-light fa-solid fa-pen-to-square" })</li>
+                </ul>
+            </div>
+        </div> <!-- .container -->
+    </nav> <!-- .navbar -->
+
+
+
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - 中心</p>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/ssets/js/jquery-3.5.1.min.js"></script>
+
+    <script src="~/Scripts/assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/Scripts/assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+    <script src="~/Scripts/vendor/wow/wow.min.js"></script>
+
+    <script src="~/Scripts/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+
+    <script src="~/Scripts/vendor/isotope/isotope.pkgd.min.js"></script>
+
+    <script src="~/Scripts/js/google-maps.js"></script>
+
+    <script src="~/Scripts/js/theme.js"></script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
+<style>
+    .abs-center-x {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+</style>
