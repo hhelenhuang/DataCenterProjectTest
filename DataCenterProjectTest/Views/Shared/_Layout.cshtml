@@ -6,34 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title 資料申請</title>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/font-awesome.css">
     <!-- font awsome css link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <link rel="stylesheet" href="~/Content/maicons.css">
-
-    <link rel="stylesheet" href="~/Scripts/vendor/animate/animate.css">
-
-    <link rel="stylesheet" href="~/Scripts/vendor/owl-carousel/css/owl.carousel.css">
-
-    <link rel="stylesheet" href="~/Scripts/vendor/fancybox/css/jquery.fancybox.css">
-
-    <link rel="stylesheet" href="~/Content/theme.css">
-
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-
 
 </head>
 <body>
@@ -61,7 +37,7 @@
 
 
 
-    <div class="container body-content">
+    <div class="container body-content" style="margin-top: 60px">
         @RenderBody()
         <hr />
         <footer>
@@ -69,21 +45,10 @@
         </footer>
     </div>
 
-    <script src="~/Scripts/ssets/js/jquery-3.5.1.min.js"></script>
-
-    <script src="~/Scripts/assets/js/bootstrap.bundle.min.js"></script>
-
-    <script src="~/Scripts/assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
-
-    <script src="~/Scripts/vendor/wow/wow.min.js"></script>
-
-    <script src="~/Scripts/vendor/fancybox/js/jquery.fancybox.min.js"></script>
-
-    <script src="~/Scripts/vendor/isotope/isotope.pkgd.min.js"></script>
-
-    <script src="~/Scripts/js/google-maps.js"></script>
-
-    <script src="~/Scripts/js/theme.js"></script>
+    <script src="~/Scripts/jquery.slim.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/popper.min.js"></script>
 
     @RenderSection("scripts", required: false)
 </body>
